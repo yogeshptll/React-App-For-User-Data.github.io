@@ -1,0 +1,123 @@
+:root{
+    --dark : rgb(189, 180, 177);
+    --light: rgb(210, 210, 251);
+    --font: rgb(31, 31, 87);
+    --button: #0ac0c0;
+    --red: rgb(74, 106, 155);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--dark) ;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: var(--light);
+    box-shadow: 0px 10px 15px 0px rgba(115, 115, 245, 0.7);
+}
+
+.Brand, #user{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.65rem;
+    font-weight: 500;
+    color: var(--font);
+}
+
+#user{
+    border: 1px solid;
+    border-radius: 40px;
+    background-color: var(--button);
+    font-size: 1.4rem;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#user:hover{
+    opacity: 0.86;
+}
+
+
+
+.cards{
+    display: table;
+}
+
+.card{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 340px;
+    overflow: hidden;
+    background-color: rgb(218, 167, 167);
+    box-shadow: 0px 10px 15px 0px var(--light);
+    display: inline-block;
+    flex-direction: column;
+    border-radius: 2rem;
+    margin: 2rem;
+}
+
+.cards {
+    margin-top: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 55px 90px;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    padding: 10px;
+    margin: 20px;
+    width: 340px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--red);
+    color: whitesmoke;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    border-radius: 4px;
+    box-shadow: 10px 10px 25px gray;
+    transition: 0.1s ease-out;
+}
+
+.card:hover {
+    background-color:whitesmoke;
+    color:rgb(25, 25, 25);
+    transform: scale(1.1);
+}
+
+.card .profile-image img {
+    border-radius: 50%;
+}
+
+.card .card-content {
+    text-align: center;
+}
+
+.card .card-content h3 {
+    font-weight: 900;
+    font-size: 25px;
+}
+
+.card .card-content h2 {
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.profile-image img{
+    width: 120px;
+    height: 120px;
+    position: relative;
+}
+
+.loading{
+    color: aliceblue;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 50px;
+}
